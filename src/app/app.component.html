@@ -1,4 +1,4 @@
-<mat-sidenav-container >
+<mat-sidenav-container class="main-container" >
   <mat-sidenav  #sidenav mode="side" opened>
      <app-silderbar>
 
@@ -6,10 +6,10 @@
   </mat-sidenav>
   <mat-sidenav-content class="site">
       <header>
-        <app-header></app-header>
+        <app-header (toggle)="sidenav.toggle()"></app-header>
       </header>
       <main>
-        <button (click)="sidenav.toggle()"> toggle silder </button>
+        <router-outlet></router-outlet>
       </main>
       <footer>
         <app-footer></app-footer>
