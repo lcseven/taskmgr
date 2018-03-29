@@ -8,7 +8,7 @@ import { LoginModule } from './login/login.module'; // 重要
 
 @NgModule({
   declarations: [
-    AppComponent,
+    AppComponent
   ],
   imports: [
     BrowserModule,
