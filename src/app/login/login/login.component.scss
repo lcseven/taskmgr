@@ -1,0 +1,18 @@
+.login-card {
+    max-width: 25rem;
+    height: 24rem;
+    flex: 1 1 25rem;
+}
+form {
+    display:flex;
+     flex-direction: row; //决定主轴的方向（即项目的排列方向）。
+     justify-content: center; //定义了项目在主轴上的对齐方式 flex-start | flex-end | center | space-between | space-around;
+     align-items: center;
+     width: 100%;
+     height: 100%;
+    
+}
+.text-right {
+    margin: 10px;
+    text-align: right;
+}

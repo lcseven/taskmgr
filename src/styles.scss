@@ -1,6 +1,9 @@
 /* You can add global styles to this file, and also import other style files */
 @import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
 
+html {
+    font-size: 14px;
+}
 html,body,app-root, .site {
     width: 100%;
     height: 100%;
@@ -25,4 +28,10 @@ main {
 }
 .fill-remaining-space {
     flex: 1 1 auto; 
+}
+.full-width {
+    width: 100%;
+}
+mat-sidenav {
+    width: 300px;
 }
