@@ -4,7 +4,8 @@ import { MatSidenavModule } from '@angular/material';
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module'
 import { CoreModule } from './core/core.module';
-import { LoginModule } from './login/login.module'; // 重要
+import { LoginModule } from './login/login.module'; 
+import { ProjectModule } from './project/project.module';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { LoginModule } from './login/login.module'; // 重要
     MatSidenavModule,
     CoreModule,
     AppRoutingModule,
-    LoginModule // 重要
+    LoginModule,
+    ProjectModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

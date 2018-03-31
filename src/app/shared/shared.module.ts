@@ -10,6 +10,7 @@ import {
    MatSliderModule,
    MatSlideToggleModule,
    MatGridListModule,
+   MatDialogModule,
 
     } from '@angular/material';
 
@@ -25,6 +26,7 @@ import {
     MatSliderModule,
     MatSlideToggleModule,
     MatGridListModule,
+    MatDialogModule,
 
   ],
   exports: [
@@ -38,6 +40,7 @@ import {
     MatSliderModule,
     MatSlideToggleModule,
     MatGridListModule,
+    MatDialogModule,
 
   ],
   declarations: []
