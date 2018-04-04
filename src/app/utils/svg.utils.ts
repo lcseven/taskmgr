@@ -13,6 +13,11 @@ export const loadSvgResources = (ir: MatIconRegistry, ds: DomSanitizer) => {
 
     );
     ir.addSvgIcon(
+        'unassigned',
+        ds.bypassSecurityTrustResourceUrl(`${avatarSvg}/unassigned.svg`)
+
+    );
+    ir.addSvgIcon(
         'move',
         ds.bypassSecurityTrustResourceUrl(`${menuSvg}/move.svg`)
 

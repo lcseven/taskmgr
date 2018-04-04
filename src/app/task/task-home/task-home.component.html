@@ -4,11 +4,12 @@
 
  class="list-container"
  > 
-  <!-- [item]="list" -->
+  <!--  -->
  <app-task-header [header]="list.name"></app-task-header>
  <app-task-item 
- *ngFor="let task of list.tasks" >
-
+ *ngFor="let task of list.tasks"
+ [item]="task"
+  >
 </app-task-item>
  </app-task-list>
 </div>
