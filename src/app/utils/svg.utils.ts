@@ -6,9 +6,15 @@ export const loadSvgResources = (ir: MatIconRegistry, ds: DomSanitizer) => {
     const sildSvg = `${iconSvg}/silde`
     const daysSvg = `${iconSvg}/days`
     const avatarSvg = `${iconSvg}/avatar`
+    const menuSvg = `${iconSvg}/menu`
     ir.addSvgIcon(
         'gifts',
         ds.bypassSecurityTrustResourceUrl('assets/52gifts.svg')
+
+    );
+    ir.addSvgIcon(
+        'move',
+        ds.bypassSecurityTrustResourceUrl(`${menuSvg}/move.svg`)
 
     );
     ir.addSvgIcon(

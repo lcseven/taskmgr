@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material';
 import { NewProjectComponent} from '../new-project/new-project.component';
+import { InviteComponent}from '../invite/invite.component'
 
 @Component({
   selector: 'app-project-list',
@@ -29,5 +30,7 @@ export class ProjectListComponent implements OnInit {
       data: { name: 'austin' }
     });
   }
-
+  openInviteDailog () {
+    this.dialog.open(InviteComponent)
+  }
 }
