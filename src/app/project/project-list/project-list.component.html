@@ -1,6 +1,8 @@
 <app-project-item *ngFor="let project of projects"
 [item]="project" class="card"
-(toggleInvite)="openInviteDailog()"
+(onInvite)="openInviteDailog()"
+(onEdit)="openEditProjectDailog(project)"
+(onDelete)="launchCofirmDailog()"
 >
 
 </app-project-item>

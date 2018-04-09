@@ -7,13 +7,20 @@ import { Component, OnInit, Input,Output, EventEmitter } from '@angular/core';
 })
 export class ProjectItemComponent implements OnInit {
 @Input() item;
-@Output() toggleInvite = new EventEmitter<void>();
+@Output() onInvite = new EventEmitter<void>();
+@Output() onEdit = new EventEmitter<void>();
+@Output() onDelete = new EventEmitter<void>();
   constructor() { }
 
   ngOnInit() {
   }
-  openInvite() {
-    this.toggleInvite.emit();
+  onInviteClick() {
+    this.onInvite.emit();
   }
-
+  onEditClick() {
+    this.onEdit.emit();
+  }
+  onDeleteClick() {
+    this.onDelete.emit();
+  }
 }
